@@ -1,0 +1,24 @@
+{
+  "name": "dinakh2.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio site for Dina Hashash - Stanford CS + Graphics + AI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinakh2/dinakh2.github.io.git"
+  },
+  "keywords": [],
+  "author": "Dina Hashash",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dinakh2/dinakh2.github.io/issues"
+  },
+  "homepage": "https://github.com/dinakh2/dinakh2.github.io#readme",
+  "dependencies": {
+    "canvas": "^3.2.3"
+  }
+}

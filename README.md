@@ -1,44 +1,49 @@
-# vCard - Personal portfolio
+# dinakh2.github.io
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Personal portfolio site.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## What it is
 
-## Demo
+A fully custom, interactive portfolio. The centerpiece is a 3D pixel swarm that forms my silhouette from a point cloud generated from reference photos. Everything runs as static HTML/CSS/JS deployed via GitHub Pages.
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## Features
 
-## Prerequisites
+- **Pixel swarm portrait** — ~2,000 particles coalesce into a 3D point cloud of my silhouette on page load, with organic drift, pulse, and ambient spill
+- **3D particle system** — particles have real XYZ coordinates sampled from front and side reference photos via a custom Node.js generation script
+- **Head tracking** — the head region rotates toward the mouse in true 3D using per-particle bone-space projection
+- **Mouse repulsion** — particles physically scatter from the cursor when the cursor goes through the silhouette
+- **Mixamo animation layer** — a hidden Three.js skeleton drives particle regions during Easter egg animations (wave, backflip), with per-region bone calibration at animation start
+- **Orbiting navigation labels** — About, Education, Experience, Portfolio float around the figure and expand into terminal-style content panels inline
+- **Aurebesh Easter eggs** — Star Wars alphabet phrases in the corners that scramble-decode on hover and trigger animations or particle effects
+- **Social links** — Instagram, LinkedIn, GitHub
 
-Before you begin, ensure you have met the following requirements:
+## Stack
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+- Vanilla HTML + CSS + JavaScript
+- Three.js r128 (via CDN) + FBXLoader for skeleton animation
+- Canvas 2D for particle rendering
+- GitHub Pages for hosting
 
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
+## Local development
 
 ```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+# Requires Node.js for the portrait generation scripts
+npx serve .
+# then open http://localhost:xxxx
 ```
 
-## Contact
+## Portrait data generation
 
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+```bash
+# Generate 2D particle map from reference photos
+node scripts/generate_sample.js
 
-## License
+# Generate 3D point cloud from front + side reference photos  
+node scripts/generate_3d.js
+```
 
-MIT
+Output files (`assets/js/portrait_data.js`, `assets/js/portrait_data_3d.js`) are committed and served statically. The generation scripts above only need to be re-run if reference photos change.
+
+## Easter eggs
+
+There are a few hidden in the corners. They're in Aurebesh. May the Force be with you.
