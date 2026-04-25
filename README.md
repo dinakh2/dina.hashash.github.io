@@ -8,14 +8,14 @@ A fully custom, interactive portfolio. The centerpiece is a 3D pixel swarm that 
 
 ## Features
 
-- **Pixel swarm portrait** — ~2,000 particles coalesce into a 3D point cloud of my silhouette on page load, with organic drift, pulse, and ambient spill
-- **3D particle system** — particles have real XYZ coordinates sampled from front and side reference photos via a custom Node.js generation script
-- **Head tracking** — the head region rotates toward the mouse in true 3D using per-particle bone-space projection
-- **Mouse repulsion** — particles physically scatter from the cursor when the cursor goes through the silhouette
-- **Mixamo animation layer** — a hidden Three.js skeleton drives particle regions during Easter egg animations (wave, backflip), with per-region bone calibration at animation start
-- **Orbiting navigation labels** — About, Education, Experience, Portfolio float around the figure and expand into terminal-style content panels inline
-- **Aurebesh Easter eggs** — Star Wars alphabet phrases in the corners that scramble-decode on hover and trigger animations or particle effects
-- **Social links** — Instagram, LinkedIn, GitHub
+- **Pixel swarm portrait** - ~2,000 particles coalesce into a 3D point cloud of my silhouette on page load, with organic drift, pulse, and ambient spill
+- **3D particle system** - particles have real XYZ coordinates sampled from front and side reference photos via a custom Node.js generation script
+- **Head tracking** - the head region rotates toward the mouse in true 3D using per-particle bone-space projection
+- **Mouse repulsion** - particles physically scatter from the cursor when the cursor goes through the silhouette
+- **Mixamo animation layer** - a hidden Three.js skeleton drives particle regions during Easter egg animations (wave, backflip), with per-region bone calibration at animation start
+- **Orbiting navigation labels** - About, Education, Experience, Portfolio float around the figure and expand into terminal-style content panels inline
+- **Aurebesh Easter eggs** - Star Wars alphabet phrases in the corners that scramble-decode on hover and trigger animations or particle effects
+- **Social links** - Instagram, LinkedIn, GitHub
 
 ## Stack
 
